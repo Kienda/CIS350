@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table,
+    th {
+      border: 3px solid beige;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+    }
+
+    th {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Tables</h1>
+  <table>
+    <th>Cours ID</th>
+    <th>Course Name</th>
+    <th>Room</th>
+    <th>Day and Time</th>
+    <tr>
+      <td>C01</td>
+      <td>CIS 350</td>
+      <td>905</td>
+      <td>Saturday:12:00pm to 5:00pm</td>
+    </tr>
+  </table> <br>
+
+  <!-- Row span Example -->
+  <h2>Row span</h2>
+  <table style="width: 100%;">
+    <tr>
+      <th>Course Name</th>
+      <td>Software Development</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Day and Time</th>
+      <td>Saturday 12:00 - 1:40 pm</td>
+    </tr>
+    <tr>
+      <td>Saturday 12:00 - 2:00 pm</td>
+    </tr>
+  </table>
+
+  <h2>Colon span</h2>
+  <table style="width: 100%;">
+    <tr>
+      <th>Course Name</th>
+      <td colspan="2">Software Development</td>
+    </tr>
+    <tr>
+      <th>Day and Time</th>
+      <td>Saturday 12:00 - 1:40 pm</td>
+      <td>Saturday 12:00 - 2:00 pm</td>
+    </tr>
+  </table>
+
+  <h2>Form</h2>
+  <form action="">
+    <label for="fname">First name: </label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name: </label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h2>Radio selectation</h2>
+  <form action="">
+    <input type="radio" id="ra1" name="ra" value="ra1">
+    <label for="ra1">First</label><br>
+    <input type="radio" id="ra2" name="ra" value="ra2"> <label for="ra2">Second</label><br>
+    <input type="radio" id="ra3" name="ra" value="ra3"> <label for="ra3">Third</label><br>
+  </form>
+
+  <h2>Check box</h2>
+  <form action="">
+    <input type="checkbox" id="cb1" name="cb1" value="cb1">
+    <label for="cb1">First</label><br>
+    <input type="checkbox" id="cb2" name="cb2" value="cb2"> <label for="cb2">Second</label><br>
+    <input type="checkbox" id="cb3" name="cb3" value="cb3"> <label for="cb3">Third</label><br>
+  </form>
+
+  <h2>Drop down</h2>
+  <form action="">
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <h2>Contact</h2>
+    <p>Adding a link to send emails</p>
+    <a href="mailto:alhassaneabdoulaye" target="_blank">Email: Abdoulaye</a>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<!Doctype Html>
+<html>
+  <head>
+    <title>Week2</title>
+  </head>
+  <body>
+    <h1>Tables</h1>
+    <table>
+     <th></th>
+     <tr> 
+        <td></td>
+        <td></td>
+     </tr>
+    </table>
+  </body>
+</html>
