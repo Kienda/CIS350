@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Text</title>
+    <style>
+        .scroll-text {
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            animation: scroll-left 10s linear infinite;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        @keyframes scroll-left {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .scroll-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scroll-container">
+        <div class="scroll-text">Hello, Welcome to My Homepage</div>
+    </div>
+
+</body>
+</html>
